@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@commitlint/cli': 12.1.4
   '@commitlint/config-conventional': 12.1.4
+  '@reduxjs/toolkit': ^1.6.1
   '@types/react': 17.0.14
   '@types/react-dom': 17.0.9
   '@types/react-redux': ^7.1.18
@@ -43,6 +44,7 @@ specifiers:
   windicss-analysis: 0.3.4
 
 dependencies:
+  '@reduxjs/toolkit': 1.6.1_react-redux@7.2.4+react@17.0.2
   classnames: 2.3.1
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -695,6 +697,25 @@ packages:
   /@polka/url/1.0.0-next.15:
     resolution: {integrity: sha512-15spi3V28QdevleWBNXE4pIls3nFZmBbUGrW9IVPwiQczuSb9n76TCB4bsk8TSel+I1OkHEdPhu5QKMfY6rQHA==}
     dev: true
+
+  /@reduxjs/toolkit/1.6.1_react-redux@7.2.4+react@17.0.2:
+    resolution: {integrity: sha1-e8g7RzUqZjvyjbAeedF7pUuYrek=}
+    peerDependencies:
+      react: ^16.14.0 || ^17.0.0
+      react-redux: ^7.2.1
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-redux:
+        optional: true
+    dependencies:
+      immer: 9.0.5
+      react: 17.0.2
+      react-redux: 7.2.4_react-dom@17.0.2+react@17.0.2
+      redux: 4.1.0
+      redux-thunk: 2.3.0
+      reselect: 4.0.0
+    dev: false
 
   /@rollup/pluginutils/4.1.0:
     resolution: {integrity: sha512-TrBhfJkFxA+ER+ew2U2/fHbebhLT/l/2pRk0hfj9KusXUuRXd2v0R58AfaZK9VXDQ4TogOSEmICVrQAA3zFnHQ==}
@@ -1715,6 +1736,7 @@ packages:
 
   /deep-diff/0.3.8:
     resolution: {integrity: sha1-wB3mPvsO7JeYgB1Ax+Da4ltYLIQ=}
+    dev: false
 
   /deep-extend/0.6.0:
     resolution: {integrity: sha1-xPp8lUBKF6nD6Mp+FTcxK3NjMKw=}
@@ -2727,6 +2749,10 @@ packages:
     resolution: {integrity: sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==}
     engines: {node: '>= 4'}
     dev: true
+
+  /immer/9.0.5:
+    resolution: {integrity: sha1-pxVPNP5wZPFfAFVMyUxmzAv0U+w=}
+    dev: false
 
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
@@ -4083,6 +4109,10 @@ packages:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /reselect/4.0.0:
+    resolution: {integrity: sha1-8lKYMOXT0OAhQIskaiBu9OpEN/c=}
+    dev: false
 
   /resolve-from/4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
