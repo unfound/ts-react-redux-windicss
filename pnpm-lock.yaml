@@ -6,6 +6,7 @@ specifiers:
   '@types/react': 17.0.14
   '@types/react-dom': 17.0.9
   '@types/react-redux': ^7.1.18
+  '@types/redux-logger': ^3.0.9
   '@types/rollup-plugin-visualizer': 4.2.1
   '@typescript-eslint/eslint-plugin': 4.28.3
   '@typescript-eslint/parser': 4.28.3
@@ -28,6 +29,8 @@ specifiers:
   react-dom: 17.0.2
   react-redux: ^7.2.4
   redux: ^4.1.0
+  redux-logger: ^3.0.6
+  redux-thunk: ^2.3.0
   rollup-plugin-visualizer: 5.5.2
   sort-package-json: 1.50.0
   typescript: 4.3.5
@@ -45,6 +48,8 @@ dependencies:
   react-dom: 17.0.2_react@17.0.2
   react-redux: 7.2.4_react-dom@17.0.2+react@17.0.2
   redux: 4.1.0
+  redux-logger: 3.0.6
+  redux-thunk: 2.3.0
 
 devDependencies:
   '@commitlint/cli': 12.1.4
@@ -52,6 +57,7 @@ devDependencies:
   '@types/react': 17.0.14
   '@types/react-dom': 17.0.9
   '@types/react-redux': 7.1.18
+  '@types/redux-logger': 3.0.9
   '@types/rollup-plugin-visualizer': 4.2.1
   '@typescript-eslint/eslint-plugin': 4.28.3_8da3816a7c3fb8ebc9f4c4b3e4b2e38f
   '@typescript-eslint/parser': 4.28.3_eslint@7.30.0+typescript@4.3.5
@@ -772,6 +778,12 @@ packages:
       '@types/prop-types': 15.7.4
       '@types/scheduler': 0.16.2
       csstype: 3.0.8
+
+  /@types/redux-logger/3.0.9:
+    resolution: {integrity: sha1-kZOz1Ru2q5jSVRS6d2Tk+Ypk0+w=}
+    dependencies:
+      redux: 4.1.0
+    dev: true
 
   /@types/rollup-plugin-visualizer/4.2.1:
     resolution: {integrity: sha512-Fk4y0EgmsSbvbayYhtSI9+cGvgw1rcQ9RlbExkQt4ivXRdiEwFKuRpxNuJCr0JktXIvOPUuPR7GSmtyZu0dujQ==}
@@ -1700,6 +1712,9 @@ packages:
   /dedent/0.7.0:
     resolution: {integrity: sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=}
     dev: true
+
+  /deep-diff/0.3.8:
+    resolution: {integrity: sha1-wB3mPvsO7JeYgB1Ax+Da4ltYLIQ=}
 
   /deep-extend/0.6.0:
     resolution: {integrity: sha1-xPp8lUBKF6nD6Mp+FTcxK3NjMKw=}
@@ -4013,6 +4028,16 @@ packages:
       indent-string: 4.0.0
       strip-indent: 3.0.0
     dev: true
+
+  /redux-logger/3.0.6:
+    resolution: {integrity: sha1-91VZZvMJjzyIYExEnPC69XeCdL8=}
+    dependencies:
+      deep-diff: 0.3.8
+    dev: false
+
+  /redux-thunk/2.3.0:
+    resolution: {integrity: sha1-UcLBmhhe1Rh6qpotCLZm0NZGdiI=}
+    dev: false
 
   /redux/4.1.0:
     resolution: {integrity: sha1-6wSWefL1I8N58a/zRchhLylMiNQ=}
