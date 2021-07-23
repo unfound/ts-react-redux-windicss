@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 import App from "./App";
 import "virtual:windi.css";
+import './index.css'
 
 render(
   <StrictMode>

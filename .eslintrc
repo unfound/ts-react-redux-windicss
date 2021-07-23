@@ -26,7 +26,8 @@
     "@typescript-eslint/naming-convention": ["off"],
     "no-console": "off",
     "import/prefer-default-export": "off",
-    "no-param-reassign": "off"
+    "no-param-reassign": "off",
+    "no-plusplus": "off"
   },
   "ignorePatterns": "*.js",
   "settings": {
