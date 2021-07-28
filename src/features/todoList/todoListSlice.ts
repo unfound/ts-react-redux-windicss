@@ -11,11 +11,13 @@ export type Filter = 'ALL' | 'COMPLETED' | 'ACTIVE'
 
 export interface TodoList {
     filter: Filter,
+    count: number,
     list: Array<TodoListItem>
 }
 
 const initialState: TodoList = {
     filter: 'ALL',
+    count: 0,
     list: []
 }
 
@@ -44,13 +46,17 @@ const todoListSlice = createSlice({
         },
         filterItem: (state, action:PayloadAction<Filter>) => {
             state.filter = action.payload
+        },
+        addCount: (state) => {
+            state.count++
         }
     }
 })
 
-export const { addItem, completeItem, deleteItem, filterItem } = todoListSlice.actions
+export const { addItem, completeItem, deleteItem, filterItem, addCount } = todoListSlice.actions
 
 export const selectList = (state: RootState): Array<TodoListItem> => state.todoList.list
 export const selectFilter = (state: RootState): Filter => state.todoList.filter
+export const selectTodoList = (state: RootState): TodoList => state.todoList
 
 export default todoListSlice.reducer

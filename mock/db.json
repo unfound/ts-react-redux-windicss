@@ -20,5 +20,17 @@
       "title": "试试看",
       "author": "cmx"
     }
+  ],
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "皮卡丘",
+      "level": 699
+    },
+    {
+      "id": 2,
+      "name": "小火龙",
+      "level": 6
+    }
   ]
 }
