@@ -1,4 +1,5 @@
 import { defineConfig } from 'windicss/helpers';
+import animations from '@windicss/animations'
 
 export default defineConfig({
   darkMode: 'class',
@@ -14,10 +15,23 @@ export default defineConfig({
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       'focus': '0 0 0 2px rgba(66, 153, 225, 0.2)',
+      'modal': '0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;',
       'inner': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       'none': 'none',
     },
   },
+  plugins: [
+    animations({
+      settings: {
+        animatedSpeed: 1000,
+        heartBeatSpeed: 1000,
+        hingeSpeed: 2000,
+        bounceInSpeed: 750,
+        bounceOutSpeed: 750,
+        animationDelaySpeed: 1000,
+      }
+    })
+  ],
   extract: {
     include: ['src/**/*.{ts,tsx}', 'index.html'],
     exclude: ['node_modules', '.git'],

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Counter from 'src/features/counter/Counter'
 import TodoList from 'src/features/todoList/TodoList'
+import ArticleList from 'src/features/articleList/ArticleList'
 
 export default function Router (): JSX.Element {
     const url = window.location.hash.substr(1)
@@ -21,9 +22,11 @@ export default function Router (): JSX.Element {
         case '/todo-list':
             Child = TodoList
             break
+        case '/article-list': 
+            Child = ArticleList
+            break
         default: Child = Counter
     }
-    console.log(Child)
 
     return <Child />
 }
